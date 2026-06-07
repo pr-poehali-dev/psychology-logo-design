@@ -82,6 +82,19 @@
     z-index: 0;
   }
 
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("https://cdn.poehali.dev/projects/9bfd5270-f3fa-4ced-b06b-5b399eb1e537/files/bedb0756-8344-405f-b515-5c4c98f9a3e9.jpg");
+    background-size: 300px 300px;
+    background-repeat: repeat;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 0;
+    mix-blend-mode: multiply;
+  }
+
   #root {
     position: relative;
     z-index: 1;
