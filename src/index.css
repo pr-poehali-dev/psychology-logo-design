@@ -61,6 +61,30 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Golos Text", sans-serif;
+    background-image: url("https://cdn.poehali.dev/projects/9bfd5270-f3fa-4ced-b06b-5b399eb1e537/files/03f2ff93-416c-4599-8071-7c6e1955f9f1.jpg");
+    background-size: 800px 800px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(
+      155deg,
+      rgba(250, 246, 241, 0.78) 0%,
+      rgba(240, 232, 220, 0.62) 45%,
+      rgba(210, 225, 198, 0.28) 75%,
+      rgba(250, 246, 241, 0.7) 100%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  #root {
+    position: relative;
+    z-index: 1;
   }
 
   h1,
